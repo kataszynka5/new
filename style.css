@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    font-family: hanken grotesk;
+}
+
+section {
+    width: 400px;
+    height: 700px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+}
+
+.result :first-child{
+    color: lightgrey;
+    font-size: 20px;
+}
+
+.result .circle {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+
+}
+.result .circle :first-child {
+    font-size: 44px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+.result .circle :last-child {
+    margin: 0;
+    color: lightslategray;
+    font-weight: 600;
+}
+
+.result h2 {
+    color: white;
+}
+
+.result .description {
+    color: white;
+    padding-bottom: 20px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    gap: 24px;
+}
+
+.summary :first-child {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card {
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    gap: 16px;
+}
+
+.score {
+    display: flex;
+    gap: 4px;
+    color: gray;
+}
+
+.card-red .title {
+    color: hsl(0, 100%, 67%);
+}
+
+.card-red {
+    background-color: hsl(0, 100%, 67%, 0.1 );
+}
+
+.card-yellow .title {
+    color: hsl(39, 100%, 56%);
+}
+
+.card-yellow {
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.card-aqua .title {
+    color: hsl(166, 100%, 37%);
+}
+
+.card-aqua {
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.card-blue .title {
+    color: hsl(234, 85%, 45%);
+}
+
+.card-blue {
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.score :first-child {
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    height: 42px;
+    border-radius: 24px;
+    font-family: hanken grotesk;
+    font-size: 16px;
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(241, 81%, 54%);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        height: 400px;
+        width: 600px;
+    }
+
+    .result {
+        max-width: 280px;
+        border-radius: 16px;
+    }
+
+    .result .description {
+        padding: 8px;
+    }
+
+    .summary {
+        width: 300px;
+        gap: 28px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
